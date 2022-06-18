@@ -1,0 +1,121 @@
+.sec4 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 120px 15px 100px 15px;
+    &__container {
+        max-width: 1230px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 56px;
+        color: #232425;
+    }
+
+    p {
+        max-width: 352px;
+        margin: 20px auto 70px auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        color: #303E49;
+        
+    }
+}
+
+.b-s4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.i-s4 {
+    box-sizing: border-box;
+    border: 2px solid #DCDCDC;
+    border-radius: 16px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 50px;
+    transition: all 0.3s ease 0s;
+    &__pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 88px;
+        height: 88px;
+        background: #1D2225;
+        border-radius: 9px;
+        svg {
+            path {
+                fill: white;
+                stroke: white;
+            }
+            
+            
+        }
+    }
+    h3 {
+        text-align: left;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1D2225;
+    }
+
+    p {
+        margin: 0;
+        text-align: left;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #7C7C7C;
+
+    }
+
+    a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #1D2225;
+    }
+
+    &:hover {
+        background: #3A78F2;
+        border: 2px solid #3A78F2;
+        h3 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        a {
+            color: white
+        }
+        .i-s4__pic {
+            background: white;
+        }
+        svg {
+            path {
+                fill: #1D2225;
+                stroke: #1D2225;
+            }        
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.sec6 {
+    width: 100%;
+    padding: 85px 15px;
+    &__container {
+        max-width: 1270px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 90px;
+    }
+}
+
+.l-s6 {
+    display: flex;
+    align-items: flex-start;
+    &__span {
+        content: '';
+        display: block;
+        min-width: 70px;
+        height: 2px;
+        background: #1D2130;
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+
+    &__title {
+        max-width: 450px;
+        span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 1.92px;
+            text-transform: uppercase;
+            color: #1D2130;
+            
+        }
+
+        h2 {
+            margin: 35px 0px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 44px;
+            color: #1D2130;
+            
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #1D2130;
+            opacity: 0.7;
+        }
+    }
+}
+
+.r-s6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    &__item {
+
+        h4 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: #1D2130;
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #1D2130;
+            text-decoration: none;
+            
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            color: #1D2130;
+        }
+    }
+}

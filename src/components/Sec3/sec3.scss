@@ -1,0 +1,89 @@
+.sec3 {
+    width: 100%;
+    padding: 0px 60px 0px 15px;
+    &__container {
+        max-width: 1350px;
+        margin: 0 auto;
+        background: #16212E;
+        border-radius: 12px;
+        padding: 58px 96px;
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        // column-gap: 50px;
+        align-items: center;
+    }
+
+    &__l-p {
+        min-width: 490px;
+        max-width: 490px;
+        span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+        }
+
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin: 20px 0px;
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
+    }
+}
+
+.rp-s3 {
+    margin-left: 60px;
+    width: 100%;
+    min-width: 690px;
+    min-height: 460px;
+    background-image: url('../../assets/sec3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        display: flex;
+        align-items: center;
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
+
+        span {
+            margin-left: 9px;
+            content: '';
+            display: block;
+            width: 80px;
+            height: 1px;
+            background: #9C9C9C;
+        }
+    }
+}
