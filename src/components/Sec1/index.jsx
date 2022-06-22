@@ -1,6 +1,8 @@
-import { Button, Link, Typography } from '@mui/material';
+import { Button, IconButton, Link, Typography } from '@mui/material';
 import React from 'react'
 import './sec1.scss';
+import { LocalPhoneOutlined as Tel, AlternateEmailOutlined as Email } from '@mui/icons-material'
+import {Link as LinkTo} from 'react-scroll';
 
 export default function Sec1() {
   return (
@@ -30,8 +32,14 @@ export default function Sec1() {
                     <span>Стройрегионинвест</span>
                 </div>
                 <div className="h-s1__contacts">
-                    <Link href='tel:89067033141'>8 906 703 31 41</Link>
-                    <Link href='mailto:Palma.stroi@yandex.ru'>Palma.stroi@yandex.ru</Link>
+                    <Link href='tel:89067033141'>
+                        <p>8 906 703 31 41</p>
+                        <IconButton className='iconbutton'><Tel /></IconButton>
+                    </Link>
+                    <Link href='mailto:Palma.stroi@yandex.ru'>
+                        <p>Palma.stroi@yandex.ru</p>
+                        <IconButton className='iconbutton'><Email  /></IconButton>
+                    </Link>
                 </div>
             </div>
             <div className="sec1__main m-s1">
@@ -42,7 +50,8 @@ export default function Sec1() {
                 </Typography>
                 <div className="m-s1__contact">
                     <Button variant='contained'>Связаться</Button>
-                    <Link href='/'>
+                    <LinkTo to='sec4' spy={true} smooth={true} duration={500}>
+                        <span>
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_b_2_3613)">
                                 <path d="M0 12.5C0 5.87258 5.37258 0.5 12 0.5C18.6274 0.5 24 5.87258 24 12.5C24 19.1274 18.6274 24.5 12 24.5C5.37258 24.5 0 19.1274 0 12.5Z" fill="white"/>
@@ -57,8 +66,9 @@ export default function Sec1() {
                                 </filter>
                             </defs>
                         </svg>
+                        </span>
                         Что мы делаем ?
-                    </Link>
+                    </LinkTo>
                 </div>
             </div>
             <div className="sec1__footer f-s1">

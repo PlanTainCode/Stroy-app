@@ -105,7 +105,7 @@ export default function Sec4() {
   ];
 
   return (
-    <div className="sec4">
+    <div className="sec4" id='sec4'>
       <div className="sec4__container">
         <Typography variant='h2'>Наши услуги</Typography>
         <Typography variant='inherit'>
